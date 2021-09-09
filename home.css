@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    cursor: default;
+    height: 100%;
+    font-family: "Nunito Sans";
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#banner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    flex-flow: column;
+}
+
+#name-title {
+    display: inline-block;
+    font-size: 50px;
+    letter-spacing: .2rem;
+}
+
+/* #name-title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    background:  black;
+} */
+
+/* #name-title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100vw;
+    left: 50%;
+    background: black;
+    transform: translateX(-50%);
+} */
+
+#job-title {
+    display: inline-block;
+    font-size: 50px;
+    letter-spacing: .2rem;
+}
+
+#border-wrap {
+    content: "";
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    height: .1em;
+    width: 50vw;
+    left: 50%;
+    top: 30;
+    background: black;
+    transform: translateX(-50%);
+    /* transition: ease-out 250ms; */
+    /* transform: scale(0,1); */
+}
+
+/* #border-line::before {
+    transform: scale(1,1);
+} */
+
+nav {
+    width: 100%;
+    display: flex;
+    opacity: 1;
+    padding-left: 5em;
+    padding-top: 4em;
+    flex-flow: column;
+}
+
+#menu-title {
+    position: relative;
+    font-size: 35px;
+    letter-spacing: .08rem;
+}
+
+#nav-choices {
+    font-size: 25px;
+    position: relative;
+    padding-top: .5em;
+    align-self: flex-start;
+    padding-left: .5em;
+}
+
+#nav-choices ul {
+    position: absolute;
+    letter-spacing: .08rem;
+    list-style: none;
+}
+
+#nav-choices ul li {
+    line-height: 2.5rem;
+}
+
+#info-area {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+.info-title {
+    position: relative;
+    font-size: 33px;
+    letter-spacing: .08rem;
+}
+
+.info {
+    position: relative;
+    padding-top: 1em;
+    padding-left: 20em;
+    padding-right: 20em;
+    font-size: 20px;
+    letter-spacing: .05rem;
+    /* line-height: 1.5rem; */
+}
+
+#wedding-headshot {
+    margin-top: .4rem;
+    width: 350px;
+    float: left;
+    margin-right: 1.5rem;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px 1px black;
+}
