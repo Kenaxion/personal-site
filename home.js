@@ -27,10 +27,10 @@ borderLineFunc = function() {
     document.getElementById("border-line").style.transform = "scale(1, 1)";
 }, false)
 
-// let menuTitle = document.getElementById("menu-title");
-// let menuTitleHover = document.getElementById("menu-title").style.opacity = "0";
-// menuTitle.addEventListener("hover",
-//     menuHoverFunc = function() {
-//        document.getElementById("menu-title").style.transition = "opacity .5s 1s"
-//        document.getElementById("menu-title").style.opacity = "1";
-//     },);
+let infoDropdownChoices = document.getElementsByClassName("info-dropdown-choices").style.opacity = "0";
+document.addEventListener("click",
+infoDropDownfunc = function () {
+    document.getElementsByClassName("info-dropdown-choices").style.transition = "opacity .5s 0s";
+    document.getElementsByClassName("info-dropdown-choices").style.opacity = "1";
+    
+},)
