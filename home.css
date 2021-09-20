@@ -31,6 +31,7 @@ body {
     display: inline-block;
     font-size: 50px;
     letter-spacing: .2rem;
+    bottom: 5em;
 }
 
 /* #name-title::before {
@@ -127,14 +128,19 @@ nav {
     line-height: 2rem;
     list-style: none;
 }
-
+ 
 #info-area {
-    width: 100%;
+    z-index: -1;
+    width: fit-content;
+    /* padding-top: 1em; */
+    padding-left: 20em;
+    padding-right: 20em;
     position: absolute;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex-flow: column;
+    top: 12.5em;
 }
 
 h1 {
@@ -147,13 +153,6 @@ h1 {
     position: relative;
     font-size: 20px;
     letter-spacing: .05rem;
-}
-
-#background {
-    padding-top: 1em;
-    padding-left: 20em;
-    padding-right: 20em;
-    /* line-height: 1.5rem; */
 }
 
 .info-images {
