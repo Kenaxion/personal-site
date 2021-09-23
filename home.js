@@ -20,17 +20,38 @@ borderWrapFunc = function() {
     document.getElementById("border-wrap").style.opacity = "1";
 }, false)
 
-let borderLine = document.getElementById("border-line").style.transform = "scale(0, 1)";
-window.addEventListener("load",
-borderLineFunc = function() {
-    document.getElementById("border-line").style.transition = "transform ease-out 250ms";
-    document.getElementById("border-line").style.transform = "scale(1, 1)";
-}, false)
+// let borderLine = document.getElementById("border-line").style.transform = "scale(0, 1)";
+// window.addEventListener("load",
+// borderLineFunc = function() {
+//     document.getElementById("border-line").style.transition = "transform ease-out 250ms";
+//     document.getElementById("border-line").style.transform = "scale(1, 1)";
+// }, false)
 
-let infoDropdownChoices = document.getElementsByClassName("info-dropdown-choices").style.opacity = "0";
-document.addEventListener("click",
-infoDropDownfunc = function () {
-    document.getElementsByClassName("info-dropdown-choices").style.transition = "opacity .5s 0s";
-    document.getElementsByClassName("info-dropdown-choices").style.opacity = "1";
+const dropdownItems = document.getElementById("dropdown");
+const infoDropdown = document.getElementsByClassName("info-dropdown-choices");
+const menuTitle = document.getElementById("menu-title");
+// function dropdown (){
     
+    dropdownItems.addEventListener("click", 
+    displayDropdown = function() {
+        document.getElementById("dropdown").classList.toggle("show");
+    if (!dropdownItems.classList.contains("show")) {
+        dropdownItems.classList.toggle("show");
+        let i;
+        for (i = 0; i < infoDropdown.length; i++) {
+           let showDropdown = infoDropdown[i];
+           if (showDropdown.classList.contains("show")){
+            showDropdown.classList.remove("show");
+           }
+        }
+    }
 },)
+
+menuTitle.addEventListener("click", _ => {
+    dropdownItems.opacity = "1";
+    console.log("test");
+})
+
+dropdownItems.addEventListener("click", _ => {
+    console.log("test");
+})
